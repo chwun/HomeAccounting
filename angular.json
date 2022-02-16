@@ -110,9 +110,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "HomeAccounting"
+  "defaultProject": "HomeAccounting",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
