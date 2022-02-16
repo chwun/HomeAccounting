@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  background-color: #b1b1b1;
+}
+
+nav {
+  display: grid;
+  justify-items: center;
+}
+
+nav > div.navGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-decoration: none;
+  min-width: 150px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a:not(:first-child) {
+  border-left: 2px solid gray;
+}
+
+a:hover,
+a:active,
+a.activeLink {
+  background-color: #1a2566;
+  color: white;
+  font-weight: bold;
+}
