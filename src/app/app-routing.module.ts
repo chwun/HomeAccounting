@@ -21,6 +21,11 @@ const routes: Routes = [
     path: 'analysis',
     loadChildren: () =>
       import('./modules/analysis/analysis.module').then((m) => m.AnalysisModule)
+  },
+  {
+    path: 'configuration',
+    loadChildren: () =>
+      import('./modules/configuration/configuration.module').then((m) => m.ConfigurationModule)
   }
 ];
 
@@ -28,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

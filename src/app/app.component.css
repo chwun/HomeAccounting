@@ -8,9 +8,9 @@ nav {
   justify-items: center;
 }
 
-nav > div.navGrid {
+nav>div.navGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
 }
@@ -37,4 +37,9 @@ a.activeLink {
   background-color: #1a2566;
   color: white;
   font-weight: bold;
+}
+
+article {
+  padding: 1rem;
+  background-color: #fbfbfb;
 }
